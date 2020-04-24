@@ -16,11 +16,11 @@ class CashRegister
       while counter < quantity
         @items << item
         counter += 1
-      
       end
     else
       @items << item
     end
+    @lasttransaction = @items[-1]
   end
   
 
