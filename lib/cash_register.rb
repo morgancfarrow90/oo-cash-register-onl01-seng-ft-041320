@@ -18,6 +18,7 @@ class CashRegister
       while counter < quantity
         @items << item
         @transactions << @total
+        @subtotal << @
         counter += 1
       end
     else
