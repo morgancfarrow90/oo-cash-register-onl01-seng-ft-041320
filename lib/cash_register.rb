@@ -1,6 +1,6 @@
 require 'pry'
 class CashRegister
-  attr_accessor :total, :discount, :price, :items, :transactions 
+  attr_accessor :total, :discount, :price, :items, :transactions, :subtotal
 
   def initialize(discount = 0)
     @total = 0
@@ -12,6 +12,7 @@ class CashRegister
   def add_item(item, price, quantity = 1)
     @price = price
     @total += price * quantity
+    
     @transactions << @total
     if quantity > 1
       counter = 0
