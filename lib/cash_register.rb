@@ -17,10 +17,13 @@ class CashRegister
         @items << item
         counter += 1
       end
+    elsif quantity == quantity
+       
     else
       @items << item
     end
   end
+  
 
   def apply_discount
     if @discount > 0
