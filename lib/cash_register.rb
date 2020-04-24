@@ -35,6 +35,8 @@ class CashRegister
       return "There is no discount to apply."
     end
   end
+  
+  binding.pry 
 
   def void_last_transaction
    @total -= @transactions[-1] 
