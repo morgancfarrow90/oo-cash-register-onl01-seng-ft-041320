@@ -38,7 +38,7 @@ class CashRegister
   
   
 
-  def void_last_transaction
+  def self.void_last_transaction
     
     binding.pry 
    self.total -= self.transactions[-1] 
